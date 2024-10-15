@@ -1,0 +1,8 @@
+
+body{
+    background-image: url("./assets/gate.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* or top, bottom, left, right, specific coordinates */
+    background-attachment: fixed; /* or scroll */
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar</title>
+</head>
+
+<body>
+    <section style="display: flex; height: 100vh; width: 100vw; justify-content: center; margin-top: 4rem;;">
+        <div class="calendar__container">
+            <h5 class="selected"></h5>
+            <div class="calendar__control">
+                <button class="prev" id="prev">PREV</button>
+                <div class="">
+                    <select name="" id="" class="month-input" >
+                        <option value="0">January</option>
+                        <option value="1">Feburary</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
+                    <input type="number" value="" class="year-input" />
+                </div>
+
+                <button class="next" id="next">NEXT</button>
+            </div>
+            <div class="dayofweek">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+            <div class="dates">
+            </div>
+            <div class="calendar__footer">
+                <button class="cancel">Cancel</button>
+                <button class="apply">apply</button>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>

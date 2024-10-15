@@ -1,0 +1,283 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-primary: #10102a;
+  --color-primary-light: rgba(16, 16, 42, 0.8);
+  --color-secondary: #0d6efd;
+  --color-yellow: #e0ce39;
+  --color-red: #c92d26;
+  --color-light: #ffffff;
+  --color-dark: #0d0b0a;
+  --color-gray: #eeeeee;
+
+  --transition: all 0.2s ease-out;
+
+  --container-width-lg: 74%;
+  --container-width-md: 88%;
+  --form-width: 40%;
+
+  --card-border-radius-1: 4px;
+  --card-border-radius-2: 8px;
+  --padding: 10;
+  --icon-sm: 16px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background: var(--color-light) !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+label {
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+a.card,
+li a {
+  background-color: inherit !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.navbtn:hover {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-light) !important;
+  transition: var(--transition);
+}
+
+.navbtn.active {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-light) !important;
+  transition: var(--transition);
+}
+
+.text-title-1 {
+  font-size: 19px !important;
+}
+
+.text-title-2 {
+  font-size: 16px !important;
+}
+
+.text-body {
+  font-size: 12px !important;
+}
+
+.text-caption {
+  font-size: 10px !important;
+}
+
+.font-color-primary {
+  color: var(--color-primary) !important;
+}
+.font-color-primary-light {
+  color: var(--color-primary-light) !important;
+}
+
+.font-color-secondary {
+  color: var(--color-secondary) !important;
+}
+.font-color-yellow {
+  color: var(--color-yellow) !important;
+}
+.font-color-red {
+  color: var(--color-red) !important;
+}
+
+.custom-btn-color {
+  background-color: var(--color-primary) !important;
+  color: var(--color-light) !important;
+  padding: 8px 8px !important;
+  font-weight: bold !important;
+}
+
+.custom-btn-color:hover {
+  background-color: var(--color-secondary) !important;
+}
+
+.bg-primary- {
+  background-color: var(--color-primary) !important;
+}
+.bg-secondary- {
+  background-color: var(--color-secondary) !important;
+}
+.bg-primary-light {
+  background-color: var(--color-primary-light) !important;
+}
+
+.bg-primary-20 {
+  background-color: rgba(16, 16, 42, 0.2) !important;
+}
+
+.bg-danger- {
+  background-color: var(--color-danger) !important;
+}
+
+.bg-gray- {
+  background-color: var(--color-gray) !important;
+}
+
+.container {
+  width: var(--container-width-lg);
+  max-width: 1800px;
+  margin-inline: auto;
+}
+
+
+.logo {
+  width: 50px;
+}
+/* ------------------- signup/login form start --------------------- */
+.section__main {
+  min-height: 100vh;
+  background-image: url("../images/assets/gate.jpeg");
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.form__container {
+  width: 100%;
+}
+
+/* <!-- ================================================== CARDS START ================================================= --> */
+.cards__container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.card {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.card img {
+  /* min-height: 177px; */
+  height: 195px;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  /* scale: 1.01; */
+}
+
+.card:hover img {
+  scale: 1.01;
+}
+
+.calendar__container {
+  width: 100%;
+}
+
+/* .calendar__container > button{
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+} */
+
+.calendar__container ul {
+  height: fit-content;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 0;
+  place-items: center;
+}
+
+.calendar__container .weekdays li,
+.dates button,
+.calendar__info button {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  font-size: 14px;
+  height: 36px;
+}
+
+.calendar__container .dates button,
+.calendar__info button {
+  color: black;
+  aspect-ratio: 1;
+  background: transparent;
+  border: unset;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all ease 3ms;
+}
+
+.calendar__container button:disabled {
+  color: gray;
+  user-select: none;
+  pointer-events: none;
+  background: transparent;
+  cursor: not-allowed;
+}
+
+.calendar__container .dates button.booked,
+.calendar__info button.booked,
+button:disabled.booked {
+  background-color: var(--color-red);
+  color: var(--color-light);
+  cursor: default;
+}
+
+.calendar__container .dates button.pending,
+.calendar__info button.pending {
+  background-color: var(--color-yellow);
+  color: var(--color-light);
+  cursor: default;
+}
+
+.calendar__container button:hover {
+  background: var(--color-secondary);
+  color: var(--color-light);
+}
+
+.calendar__container button:disabled:not():hover {
+  transform: none;
+  background-color: inherit; /* Or any other style to reset the hover */
+}
+
+.calendar__container .dates button.today {
+  border: 2px solid var(--color-secondary);
+}
+.calendar__container .dates button.selected {
+  background: var(--color-secondary);
+  color: var(--color-light);
+}
+
+/* <!-- ================================================== MEDIA QUERIES START ================================================= --> */
+@media screen and (min-width: 576px) {
+  .cards__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media screen and (min-width: 800px) { */
+@media screen and (min-width: 768px) {
+  .cards__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .form__container {
+    width: 75%;
+  }
+  /* <!-- ================================================== efacility START ================================================= --> */
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Signup</title>
+  </head>
+  <body>
+    <div class="w-screen h-screen bg-[url('./assets/gate.jpeg')] bg-no-repeat bg-fixed bg-cover bg-center">
+      <div class="flex">
+        <div class="sm:flex-1 sm:w-full sm:block sm:h-screen hidden"></div>
+        <div
+          class="py-24 flex-1 flex bg-white w-full h-screen justify-center items-center"
+        >
+          <form action="" class="flex-col w-2/4">
+            <div class="flex items-center flex-col mb-2 gap-2">
+                <img src="./assets/logo.png" alt="" class="w-12">
+                <h1 class="sm:text-xl lg:text-2xl text-m font-bold">University of Ibadan</h1>
+            </div>
+            <div class="form-body flex flex-col gap-2">
+              <label for="name">Full name:</label>
+              <span  class="border-2 h-[40px] overflow-hidden rounded-xl border-[#1da1f2] flex items-center">
+                <input
+                  type="text"   
+                  name="name"
+                  required
+                  placeholder="Enter your full name"
+                  class="padding-2 h-full w-full focused:border-none focus:outline-none focus:border-transparent p-2"
+                />
+              </span>
+              <label for="phonenumber">Full name:</label>
+              <span  class="border-2 h-[40px] overflow-hidden rounded-xl border-[#1da1f2] flex items-center">
+                <input
+                  type="number"   
+                  name="phonenumber"
+                  required
+                  placeholder="Enter your phone number"
+                  class="padding-2 h-full w-full focused:border-none focus:outline-none focus:border-transparent p-2"
+                />
+              </span>
+              <label for="email">Email:</label>
+              <span  class="border-2 h-[40px] overflow-hidden rounded-xl border-[#1da1f2] flex items-center">
+                <input
+                  type="email"   
+                  name="email"
+                  required
+                  placeholder="Enter your email"
+                  class="padding-2 h-full w-full focused:border-none focus:outline-none focus:border-transparent p-2"
+                />
+              </span>
+              <label for="password">Password:</label>
+              <span  class="border-2 h-[40px] overflow-hidden rounded-xl border-[#1da1f2] flex items-center">
+                <input
+                  type="password"   
+                  name="password"
+                  required
+                  placeholder="Enter your password"
+                  class="padding-2 h-full w-full focused:border-none focus:outline-none focus:border-transparent p-2"
+                />
+              </span>
+              <label for="confirmpassword">Confirm Password:</label>
+              <span  class="border-2 h-[40px] overflow-hidden rounded-xl border-[#1da1f2] flex items-center">
+                <input
+                  type="comfirmpassword"   
+                  name="comfirmpassword"
+                  required
+                  placeholder="Confirm password"
+                  class="padding-2 h-full w-full focused:border-none focus:outline-none focus:border-transparent p-2"
+                />
+              </span>
+              <button type="submit" class="rounded-xl h-[40px] bg-[#1da1f2] mt-8 text-white text-lg">Sign up</button>  
+          </form>
+          <div class="flex justify-between">
+            <h6>Have an account? <a href="signup.html">Login</a></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
